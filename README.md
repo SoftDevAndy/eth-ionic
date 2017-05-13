@@ -14,12 +14,11 @@ Simples!
 
 # Screenshots
 
-![Home]()
-![Reminder]()
-![Create Reminder]()
-![Delete Reminder]()
-![About]()
-
+* [Home Screenshot Here!](https://flic.kr/p/UKhrQM)
+* [Reminder Screenshot Here!](https://flic.kr/p/UKhrRP)
+* [Create Reminder Screenshot Here!](https://flic.kr/p/UFBwxQ)
+* [Delete Reminder Screenshot Here!](https://flic.kr/p/UuYVFU)
+* [About Screenshot Here!](https://flic.kr/p/Uab9qN)
 
 # Features
 
@@ -33,14 +32,9 @@ Simples!
 
 # Links & Attribution
 
-[Ionic Tabs](https://github.com/driftyco/ionic-starter-tabs)
-
-[CryptoCompare API](https://www.cryptocompare.com/api/#-api-data-histoday-)
-
-[AngularJS](https://angularjs.org/)
-
-[Ionic](https://ionicframework.com/)
-
-[Moon Icon](http://www.flaticon.com/free-icon/moon_124556#term=moon&page=1&position=15)
-
-[Coin Sound](http://www.orangefreesounds.com/mario-coin-sound/)
+* [Ionic Tabs](https://github.com/driftyco/ionic-starter-tabs)
+* [CryptoCompare API](https://www.cryptocompare.com/api/#-api-data-histoday-)
+* [AngularJS](https://angularjs.org/)
+* [Ionic](https://ionicframework.com/)
+* [Moon Icon](http://www.flaticon.com/free-icon/moon_124556#term=moon&page=1&position=15)
+* [Coin Sound](http://www.orangefreesounds.com/mario-coin-sound/)
