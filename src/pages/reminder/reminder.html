@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Reminder
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-item>
+        <button ion-button full outline color="secondary" (click)="CreateWatcher()">Add Reminder</button>
+        <button ion-button full outline color="danger" (click)="DeleteWatcher()">Delete Reminder</button>
+        <div class="alertText">Alert me if any of the following happens</div>
+    </ion-item>
+    <ion-list>
+        <ion-item *ngFor="let watcher of allWatchers; let i = index">
+            <ion-toggle (ionChange)="UpdateToggle(i)" checked="{{watcher.On}}"></ion-toggle>
+            <ion-label>
+                <div class="alertTextContent">
+                    If <b>{{watcher.ShortHand}}</b> less then ${{watcher.DropAmount}} or greater then ${{watcher.RiseAmount}}
+                </div>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

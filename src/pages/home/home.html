@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Home</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <div>
+        <div class="help">
+            Click circle to manually refresh - Ethereum is the default coin
+            <hr>
+        </div>
+        <ion-spinner class="spinner" (click)="RefreshPage()"></ion-spinner>
+        <div *ngIf="timeUntil > 40">
+            <div class="timeUntil timeUntil-High">{{timeUntil}}</div>
+        </div>
+        <div *ngIf="timeUntil > 20 && timeUntil <= 40">
+            <div class="timeUntil timeUntil-Mid">{{timeUntil}}</div>
+        </div>
+        <div *ngIf="timeUntil <=20">
+            <div class="timeUntil timeUntil-Low">{{timeUntil}}</div>
+        </div>
+        <div class="help">
+            Time until next refresh
+            <hr>
+        </div>
+        <div class="details">
+            <ion-row>
+                <ion-col col-1></ion-col>
+                <ion-col col-10>
+                    <ion-item>
+                        <ion-label>Coin:</ion-label>
+                        <ion-select ngModel name="currentCoin" (ngModelChange)="SelectedCoinType($event)">
+                            <ion-option *ngFor="let coin of coins; let i = index" [value]="i">
+                                {{coin.name}}
+                            </ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-1></ion-col>
+            </ion-row>
+            <div class="legitDetails">
+                <p class="dateLast">Last checked @ {{ lastTimeChecked | date:'medium' }}</p>
+                <div class="miniHr">
+                    <hr><b>Current {{currentCoin.name}} in USD</b> ${{currentCoin.usdValue}}
+                </div>
+                <div class="miniHr">
+                    <hr><b>Current {{currentCoin.name}} in EUR</b> €{{currentCoin.euroValue}}
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

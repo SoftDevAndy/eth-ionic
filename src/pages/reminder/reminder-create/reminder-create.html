@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Create Reminder
+        </ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="Dismiss()">
+                <ion-icon name="md-close-circle"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-row>
+        <ion-col col-1></ion-col>
+        <ion-col col-10>
+            <ion-list>
+                <form #form="ngForm">
+                    <ion-item class="justPadding">
+                        <ion-label>Choose coin type:</ion-label>
+                        <ion-select ngModel name="coinType" required>
+                            <ion-option *ngFor="let coin of allcoins.coins; let i = index" [value]="coin.shorthand">
+                                {{coin.name}}
+                            </ion-option>
+                        </ion-select>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label color="primary">Min in USD $</ion-label>
+                        <ion-input ngModel required placeholder="100" type="number" name="minVal"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label color="primary">Max in USD $</ion-label>
+                        <ion-input ngModel required placeholder="300" type="number" name="maxVal"></ion-input>
+                    </ion-item>
+                    <button ion-button full (click)="CreateWatcher()" type="submit" [disabled]="!form.valid">
+                        <ion-icon name="md-add-circle">
+                            Add Reminder
+                        </ion-icon>
+                    </button>
+                </form>
+            </ion-list>
+        </ion-col>
+        <ion-col col-1></ion-col>
+    </ion-row>
+</ion-content>

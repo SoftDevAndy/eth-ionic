@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Delete Reminder
+        </ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="Dismiss()">
+                <span ion-text color="primary" showWhen="ios">Cancel</span>
+                <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+            </button>
+            <button ion-button full outline color="secondary" type="submit" (click)="DeleteReminder($event)">Delete Selected</button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let watcher of allWatchers; let i = index">
+            <ion-checkbox [(ngModel)]="watcher.DeleteMe"></ion-checkbox>
+            <ion-label>
+                <div class="alertTextContent">
+                    <b>#{{i}}</b> If <b>{{watcher.ShortHand}}</b> less then ${{watcher.DropAmount}} or greater then ${{watcher.RiseAmount}}
+                </div>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>
