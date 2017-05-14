@@ -14,11 +14,7 @@ Simples!
 
 # Screenshots
 
-* [Home Screenshot Here!](https://flic.kr/p/UKhrQM)
-* [Reminder Screenshot Here!](https://flic.kr/p/UKhrRP)
-* [Create Reminder Screenshot Here!](https://flic.kr/p/UFBwxQ)
-* [Delete Reminder Screenshot Here!](https://flic.kr/p/UuYVFU)
-* [About Screenshot Here!](https://flic.kr/p/Uab9qN)
+<img src="https://puu.sh/vPPYh/cb97097e74.png" height="300" width="180">|<img src="https://puu.sh/vPPYg/f01d778f21.png" height="300" width="180"> |<img src="https://puu.sh/vPPYf/ec37312880.png" height="300" width="180">|<img src="https://puu.sh/vPPYc/84640950ed.png" height="300" width="180">
 
 # Features
 
