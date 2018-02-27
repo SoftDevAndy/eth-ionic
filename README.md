@@ -1,5 +1,5 @@
-# eth-ionic
-A basic ionic app using the latest version of ionic and taking advantage of many features the framework provides.
+# ionicbitcointicker
+A basic Ionic app using the latest version of ionic and taking advantage of many features the framework provides.
 
 Through learning the latest version of AngularJS (v4) the latest version of Ionic (v3) is built upon that platform. Angular and Ionic have moved more towards Typescript so this project is different to something you would see programmed in version 1 of Ionic. This project took a few days to complete and served as a great platform to apply newly learned concepts and skills.
 
