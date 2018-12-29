@@ -12,10 +12,6 @@ Also..
 The app is a simple android reminder application that lets you create a unique reminder for Ethereum, Bitcoin or Litecoin. If the coin value in USD drops or rises beyond the range you set for the reminder a toast is presented, a sound signals and the reminder switches off.
 Simples!
 
-# Screenshots
-
-<img src="https://puu.sh/vPPYh/cb97097e74.png" height="300" width="180">|<img src="https://puu.sh/vPPYg/f01d778f21.png" height="300" width="180"> |<img src="https://puu.sh/vPPYf/ec37312880.png" height="300" width="180">|<img src="https://puu.sh/vPPYc/84640950ed.png" height="300" width="180">
-
 # Features
 
 * Custom Services
